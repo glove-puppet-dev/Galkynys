@@ -1,5 +1,5 @@
 {{- $logo := (site.Params.assets.logo | default (site.Params.label.icon | default "images/logo.png")) | absURL -}}
-{{- $socialImage := (site.Params.assets.social_image | default site.Params.assets.logo | default "images/social-preview.png") | absURL -}}
+{{- $pageImage := (or .Params.cover.image site.Params.assets.social_image site.Params.assets.logo "images/social-preview.png") | absURL -}}
 {{- if .IsHome }}
 <script type="application/ld+json">
 {
@@ -12,7 +12,7 @@
     "@type": "ImageObject",
     "url": {{ $logo | jsonify | safeJS }}
   },
-  "image": {{ $socialImage | jsonify | safeJS }},
+  "image": {{ $pageImage | jsonify | safeJS }},
   "areaServed": "Turkmenistan"
 }
 </script>
@@ -24,6 +24,7 @@
   "name": {{ .Title | plainify | jsonify | safeJS }},
   "url": {{ .Permalink | jsonify | safeJS }},
   "description": {{ with .Description }}{{ . | plainify | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | jsonify | safeJS }}{{ end }},
+  "image": {{ $pageImage | jsonify | safeJS }},
   "publisher": {
     "@type": "Organization",
     "name": {{ site.Title | jsonify | safeJS }},

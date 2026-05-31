@@ -2,6 +2,9 @@
 title: Brands
 description: Galturan LLC helps international brands launch, distribute, and grow in Turkmenistan through import support, trade marketing, local sales execution, and 25 years of market experience.
 kicker: Brands
+cover:
+  image: images/pages/brands.webp
+  alt: Brand launch and retail placement planning with product samples, merchandising, trade marketing, and category development.
 ---
 
 Galturan LLC helps international brands build a structured presence in Turkmenistan through import support, distribution planning, retail access, trade marketing, and long-term commercial development. The company applies 25 years of local market experience to brand launch, category positioning, buyer communication, and sustainable sales execution.

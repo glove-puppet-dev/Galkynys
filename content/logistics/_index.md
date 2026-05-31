@@ -2,6 +2,9 @@
 title: Logistics
 description: Galturan LLC coordinates sourcing, freight, import documentation, customs support, certification, warehousing, inventory planning, and delivery for distribution in Turkmenistan, supported by 25 years of local operating experience.
 kicker: Logistics
+cover:
+  image: images/pages/logistics.webp
+  alt: Logistics hub with freight, warehousing, customs documentation, inventory planning, and delivery coordination.
 ---
 
 Reliable logistics are essential for successful market entry and distribution. Galturan LLC supports the operational path from global production centers to legal and efficient market availability in Turkmenistan. The company's logistics work is backed by 25 years of practical experience with local market requirements, import coordination, delivery planning, and distribution needs.

@@ -2,6 +2,9 @@
 title: Company
 description: Galturan LLC is a Turkmenistan-based full-cycle market-entry, import, logistics, distribution, procurement, and brand-development partner with 25 years of local operating experience.
 kicker: Company
+cover:
+  image: images/pages/company.webp
+  alt: Galturan LLC team reviewing supplier documentation, product samples, and market-entry plans.
 ---
 
 Galturan LLC is a Turkmenistan-based commercial platform with 25 years of operating experience in the local market. The company supports international suppliers, manufacturers, brand owners, exporters, and trading partners that need a practical route into Turkmenistan through import operations, logistics, compliance coordination, distribution, procurement support, retail access, and brand development.

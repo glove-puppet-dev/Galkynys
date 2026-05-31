@@ -3,6 +3,9 @@ title: Thank You
 description: Thank you for contacting Galturan LLC about cooperation in Turkmenistan.
 kicker: Contacts
 robotsNoIndex: true
+cover:
+  image: images/pages/thank-you.webp
+  alt: Partnership request received for internal review by Galturan LLC.
 ---
 
 Thank you for contacting Galturan LLC. Your partnership request has been received.

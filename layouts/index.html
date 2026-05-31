@@ -1,7 +1,10 @@
 {{ define "main" }}
+{{- $heroImage := .Params.cover.image | default "images/pages/home.webp" -}}
 <div class="galturan-home">
     <section class="home-hero" aria-labelledby="hero-title">
         <div class="hero-background" aria-hidden="true">
+            <img class="hero-image" src="{{ $heroImage | relURL }}" width="1600" height="900" alt="" fetchpriority="high" decoding="async">
+            <div class="hero-overlay"></div>
             <div class="route route-a"></div>
             <div class="route route-b"></div>
             <div class="route route-c"></div>

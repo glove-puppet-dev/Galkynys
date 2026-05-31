@@ -2,6 +2,9 @@
 title: Contacts
 description: Contact Galturan LLC to discuss supplier cooperation, import operations, distribution opportunities, public-sector procurement, and market entry in Turkmenistan with a company backed by 25 years of local experience.
 kicker: Contacts
+cover:
+  image: images/pages/contacts.webp
+  alt: Professional partnership inquiry setting for suppliers, import cooperation, distribution, procurement, and market entry.
 ---
 
 Contact Galturan LLC to discuss partnership, product distribution, supplier cooperation, public-sector procurement, or market-entry opportunities in Turkmenistan. The company reviews cooperation requests through the lens of 25 years of operating experience in the local market.

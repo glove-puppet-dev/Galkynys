@@ -4,13 +4,14 @@
 
 ## Стек
 
-- Hugo 0.160.1
+- Hugo 0.162.1
 - Тема PaperMod как подмодуль Git
 - Tailwind CSS 4.3 через CLI
 - Основная конфигурация проекта в `hugo.yaml`
 - Кастомные шаблоны в `layouts/`
 - Tailwind source в `assets/tailwind/input.css`
 - Сгенерированный CSS для PaperMod в `assets/css/extended/custom.css`
+- Профильные изображения страниц в `static/images/pages/`
 
 ## Быстрый старт
 
@@ -67,6 +68,7 @@ data/                Файлы данных
 i18n/                Файлы переводов
 layouts/             Переопределения шаблонов проекта
 static/              Статические файлы, копируемые без обработки
+static/images/pages/ Профильные WebP-изображения страниц
 themes/PaperMod/     Тема PaperMod как подмодуль Git
 hugo.yaml            Конфигурация Hugo
 mise.toml            Закрепленная версия Hugo

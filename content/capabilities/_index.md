@@ -2,6 +2,9 @@
 title: Capabilities
 description: Galturan LLC provides market-entry planning, supplier relations, import operations, logistics, compliance, distribution, brand development, procurement, and financial coordination backed by 25 years of Turkmenistan market experience.
 kicker: Capabilities
+cover:
+  image: images/pages/capabilities.webp
+  alt: Full-cycle operating platform for supplier relations, import, logistics, compliance, distribution, procurement, and finance coordination.
 ---
 
 Galturan LLC provides a full-cycle operating platform for international suppliers entering and developing the Turkmenistan market. The platform is built on 25 years of local experience and combines market-entry planning, supplier relations, import coordination, logistics, compliance support, distribution, brand development, procurement, and financial coordination.

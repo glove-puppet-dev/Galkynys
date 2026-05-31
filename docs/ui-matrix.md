@@ -4,7 +4,7 @@
 
 Текущий стек:
 
-- Hugo 0.160.1
+- Hugo 0.162.1
 - PaperMod как подмодуль Git
 - Tailwind CSS 4.3 через CLI
 - Netlify
@@ -13,6 +13,7 @@
 - проектные overrides в `layouts/`
 - редактируемые стили в `assets/tailwind/input.css`
 - сгенерированный PaperMod extended CSS в `assets/css/extended/custom.css`
+- page visuals через `cover.image` в front matter и файлы `static/images/pages/*.webp`
 
 В проекте сейчас нет PostgreSQL, Netlify Functions и `data/entities.yaml`. Эти элементы можно добавлять позже, но они не считаются частью текущей реализации.
 
@@ -72,7 +73,7 @@
 | Category cards | Быстрое сканирование направлений. | `layouts/index.html`, CSS |
 | Route steps | Восемь шагов route-to-market. | `layouts/index.html`, CSS |
 | Capability groups | Четыре группы возможностей. | `layouts/index.html`, Markdown и CSS |
-| Page hero | Заголовок и описание внутренних страниц. | `layouts/list.html`, `layouts/single.html` |
+| Page hero | Заголовок, описание и профильное hero-изображение из `cover.image`. | `layouts/list.html`, `layouts/single.html`, `layouts/partials/page-cover.html` |
 | CTA buttons | Переход к контактам и поставщикам. | CSS-классы `.button`, `.button-primary`, `.button-secondary` |
 
 ## 5. Визуальные токены
@@ -80,7 +81,7 @@
 | Токен | Значение |
 | --- | --- |
 | Контентная ширина | `760px` |
-| Рабочая ширина | `1060px` |
+| Рабочая ширина | `1180px` |
 | Широкая сетка | `1180px` |
 | Радиус | `8px` |
 | Основной текст | Глубокий зеленовато-черный |
@@ -90,7 +91,7 @@
 | Surface | Светлый теплый фон |
 | Border | Светлая холодная линия |
 
-Все токены редактируются в `assets/tailwind/input.css`. Файл `assets/css/extended/custom.css` является сгенерированным output.
+Все токены редактируются в `assets/tailwind/input.css`. Файл использует CSS-first `@theme` Tailwind 4.3, поэтому будущие UI-блоки могут опираться на utilities вроде `text-gt-ink`, `bg-gt-surface`, `border-gt-line`, `rounded-gt` и проектные component-классы. Файл `assets/css/extended/custom.css` является сгенерированным output.
 
 ## 6. Responsive-матрица
 
@@ -121,18 +122,19 @@
 | Проверка | Команда/инструмент | Критерий |
 | --- | --- | --- |
 | Full build | `npm run build:local` | Tailwind и Hugo собираются без ошибок. |
-| Версия Hugo | `mise exec -- hugo version` | Hugo 0.160.1. |
+| Версия Hugo | `mise exec -- hugo version` | Hugo 0.162.1. |
 | Tailwind build | `npm run tw:build` | `assets/css/extended/custom.css` обновляется из `assets/tailwind/input.css`. |
 | Чистая сборка | `npm run tw:build` + `mise exec -- hugo --minify --noBuildLock --destination /private/tmp/galturan-hugo-build --cleanDestinationDir` | Output собирается вне репозитория. |
 | Ссылки меню | Проверка HTML output или ручной просмотр. | Все пункты меню ведут на 200-страницы. |
 | Mobile | 360, 390, 768 viewport. | Нет горизонтального overflow и наложений текста. |
 | Theme edits | `git status themes/PaperMod` | Подмодуль не содержит проектных правок. |
+| Page images | Проверка `cover.image` и `static/images/pages/*.webp` | У каждой основной страницы есть профильное изображение и alt-текст. |
 
 ## 9. Definition of Done для заглушки
 
 Заглушка считается готовой, когда:
 
-- сборка Tailwind и Hugo 0.160.1 проходит без ошибок;
+- сборка Tailwind 4.3 и Hugo 0.162.1 проходит без ошибок;
 - `/categories/` является бизнес-разделом, а taxonomy `categories` отключена;
 - все пункты меню открываются;
 - главная объясняет full-cycle B2B/B2G market-entry позиционирование;

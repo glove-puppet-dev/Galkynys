@@ -1,0 +1,5 @@
+{{- with .Params.cover.image }}
+<figure class="gt-page-media">
+    <img src="{{ . | relURL }}" width="1600" height="900" alt="{{ $.Params.cover.alt | default (printf "%s visual for Galturan LLC" $.Title) }}" loading="eager" decoding="async">
+</figure>
+{{- end }}

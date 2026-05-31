@@ -2,6 +2,9 @@
 title: Distribution
 description: Galturan LLC connects international suppliers with retail, wholesale, partner, institutional, and regional distribution channels in Turkmenistan through a platform built on 25 years of market experience.
 kicker: Distribution
+cover:
+  image: images/pages/distribution.webp
+  alt: Integrated distribution workflow from warehouse operations to retail, wholesale, partner, and institutional channels.
 ---
 
 Distribution is a central part of the Galturan LLC platform. The company helps products move from international suppliers into suitable local channels with structured coordination, practical market understanding, and 25 years of operating experience in Turkmenistan.

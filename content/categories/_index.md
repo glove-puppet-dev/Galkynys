@@ -2,6 +2,9 @@
 title: Categories
 description: Galturan LLC supports consumer product categories for import, distribution, procurement, and brand development in Turkmenistan, guided by 25 years of local market experience.
 kicker: Categories
+cover:
+  image: images/pages/categories.webp
+  alt: Consumer, commercial, and institutional product categories prepared for import, distribution, and brand development.
 ---
 
 Galturan LLC works with diverse consumer product categories and supports brands that are ready to enter or expand in the Turkmenistan market. Category development is guided by 25 years of local operating experience, practical knowledge of buyer expectations, and the ability to connect import readiness with distribution and sales execution.

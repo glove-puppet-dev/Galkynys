@@ -28,10 +28,16 @@
 ---
 title: Page Title
 description: Короткое SEO-описание страницы.
+kicker: Short Section Label
+cover:
+  image: images/pages/example.webp
+  alt: Короткое описание изображения для accessibility и social cards.
 ---
 ```
 
 Не используйте TOML front matter в новом контенте.
+
+`cover.image` должен указывать на файл в `static/images/pages/`. Этот же asset используется в hero страницы, Open Graph и Twitter card metadata.
 
 ## Правила написания
 

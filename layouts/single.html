@@ -1,12 +1,15 @@
 {{- define "main" }}
 <article class="gt-page gt-single">
-    <header class="gt-page-hero">
-        {{- partial "breadcrumbs.html" . }}
-        <p class="section-kicker">{{ .Params.kicker | default (.Section | default "Galturan" | humanize) }}</p>
-        <h1>{{ .Title }}</h1>
-        {{- with .Description }}
-        <p class="gt-page-lead">{{ . | markdownify }}</p>
-        {{- end }}
+    <header class="gt-page-hero{{ with .Params.cover.image }} gt-page-hero--with-media{{ end }}">
+        <div class="gt-page-copy">
+            {{- partial "breadcrumbs.html" . }}
+            <p class="section-kicker">{{ .Params.kicker | default (.Section | default "Galturan" | humanize) }}</p>
+            <h1>{{ .Title }}</h1>
+            {{- with .Description }}
+            <p class="gt-page-lead">{{ . | markdownify }}</p>
+            {{- end }}
+        </div>
+        {{- partial "page-cover.html" . }}
     </header>
 
     {{- with .Content }}

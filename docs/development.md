@@ -7,7 +7,7 @@
 - Node.js и npm
 - Hugo, закрепленный через `mise.toml`
 
-Проект закреплен на Hugo 0.160.1:
+Проект закреплен на Hugo 0.162.1:
 
 ```sh
 mise exec -- hugo version
@@ -16,7 +16,7 @@ mise exec -- hugo version
 Ожидаемый вывод должен содержать:
 
 ```text
-hugo v0.160.1
+hugo v0.162.1
 ```
 
 ## Первичная настройка

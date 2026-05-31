@@ -2,6 +2,9 @@
 title: Procurement
 description: Galturan LLC supports B2B, institutional, and public-sector procurement in Turkmenistan through documentation, compliance, logistics, delivery, and financial coordination based on 25 years of local experience.
 kicker: Procurement
+cover:
+  image: images/pages/procurement.webp
+  alt: Procurement and tender coordination with documentation, compliance, logistics planning, and financial support.
 ---
 
 Galturan LLC supports B2B, institutional, and public-sector procurement by managing complex procedures, legal and regulatory obligations, delivery timelines, local certification, supplier coordination, logistics, and reliable delivery across sectors. The company applies 25 years of Turkmenistan market experience to procurement projects where documentation, timing, compliance, and supply reliability are critical.

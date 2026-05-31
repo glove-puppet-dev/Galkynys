@@ -2,6 +2,9 @@
 title: For Suppliers
 description: Galturan LLC helps international suppliers enter Turkmenistan through market-entry planning, import operations, compliance, distribution, procurement, and brand development backed by 25 years of local experience.
 kicker: Suppliers
+cover:
+  image: images/pages/suppliers.webp
+  alt: Supplier partnership meeting with product samples, export documents, logistics planning, and local market-entry coordination.
 ---
 
 Galturan LLC works with international suppliers, manufacturers, brand owners, exporters, and trading partners that want to enter, distribute, and grow in Turkmenistan. The company brings 25 years of local market experience to supplier cooperation and helps partners move from initial interest to practical commercial execution.

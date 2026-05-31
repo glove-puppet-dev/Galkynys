@@ -1,12 +1,15 @@
 {{- define "main" }}
 <section class="gt-page gt-contact-page">
-    <header class="gt-page-hero">
-        {{- partial "breadcrumbs.html" . }}
-        <p class="section-kicker">{{ .Params.kicker | default "Contacts" }}</p>
-        <h1>{{ .Title }}</h1>
-        {{- with .Description }}
-        <p class="gt-page-lead">{{ . | markdownify }}</p>
-        {{- end }}
+    <header class="gt-page-hero{{ with .Params.cover.image }} gt-page-hero--with-media{{ end }}">
+        <div class="gt-page-copy">
+            {{- partial "breadcrumbs.html" . }}
+            <p class="section-kicker">{{ .Params.kicker | default "Contacts" }}</p>
+            <h1>{{ .Title }}</h1>
+            {{- with .Description }}
+            <p class="gt-page-lead">{{ . | markdownify }}</p>
+            {{- end }}
+        </div>
+        {{- partial "page-cover.html" . }}
     </header>
 
     <div class="contact-layout">

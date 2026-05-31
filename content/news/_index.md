@@ -2,6 +2,9 @@
 title: News
 description: Company updates, partner announcements, market-development notes, and Turkmenistan distribution insights from Galturan LLC.
 kicker: News
+cover:
+  image: images/pages/news.webp
+  alt: Market-development updates, supplier guidance, distribution insights, procurement notes, and logistics news.
 ---
 
 This section is reserved for future updates from Galturan LLC, including company announcements, partner brand launches, market-development notes, trade events, procurement updates, logistics notes, and distribution news from Turkmenistan.
